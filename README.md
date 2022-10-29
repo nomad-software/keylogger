@@ -17,7 +17,7 @@ be a small time delay when logging keys due to file buffering.
 
 ## Dependencies
 
-This will only work on [X11](https://www.x.org) based systems. It will now work
+This will only work on [X11](https://www.x.org) based systems. It will not work
 with [Wayland](https://wayland.freedesktop.org).
 
 If your Linux distribution is X11 based then install the following packages to
