@@ -56,7 +56,7 @@ func LogKeysTo(w io.Writer) {
 	C.Macro_XISetMask(masks[0].mask, C.XI_KeyRelease)
 
 	// Register events to be collected.
-	C.XISelectEvents(display, window, &masks[0], 1)
+	C.XISelectEvents(display, window, &masks[0], (C.int)(len(masks)))
 	C.XSync(display, 0)
 
 	// Free mask.
